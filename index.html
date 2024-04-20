@@ -6,97 +6,224 @@
     <title>Cafeteria</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--LLAMADA A FONT AWESOME PARA EL ÍCONO-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./imagen/logo_64_48.jpg" type="image/x-icon" style="width: 16px; height: 16px;">
+    <title>"cafeteria-frappe</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="./paginas/login.html">Iniciar Sesión</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-dark">
+  
 
-    <div class="container" data-aos="zoom-in">
-        <div class="card">
-            <img src="imagen/photo-1494314671902-399b18174975.jpg" alt="Imagen 1" height="300">
-            <div class="card-info">
-                <h2>Título 1</h2>
-                <h3>Subtítulo 1</h3>
-                <p>Precio: $10</p>
-                <p>Código: ABC123</p>
+        <header>
+          <div class="img">
+
+            <a class="navbar-brand" href="index.html"><span>
+              <img src="./imagen/logo_64_48.jpg" alt="logo"></span>
+            </a>
+          </div>
+          <div class="nav_end">
+
+            <nav>
+              <ul>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./paginas/contacto.html">Contacto</a></li>
+                <li><a href="./paginas/login.html">Iniciar Sesión</a></li>
+                <li><a href="./paginas/faq.html">FAQs</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <!-- inicia carrusel --> 
+    <section id="carrusel" style="padding-top: 50px;">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imagen/Barista2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagen/qualita-rossa-2560B.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagen/smarty-2560A.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <!-- inicia tarjetasa-->
+    <section id="tarjetas">
+
+        <div class="container" data-aos="zoom-in">
+            <!--   -->
+
+            <!--   -->
+            <div class="card">
+                <img src="imagen/oferta-cafetera-ep-mini-negra-300-capsulas-de-cafe (1).jpg" alt="Imagen 1" height="300">
+                <div class="card-info">
+                <h2>Cafetera EP</h2>
+                <h6>OFERTA: Cafetera EP Mini Negra + 300 cápsulas de café</h6>
+                <p ><span class="black-bold">Precio:</span> $10</p>
+                <p ><span class="black-bold">Código: </span>ABC123</p>
             </div>
         </div>
         <div class="card">
-            <img src="./imagen/photo-1561882468-9110e03e0f78.jpg" alt="Imagen 1" height="300">
+            <img src="./imagen/300-cafes-ep-crema-aroma-ge-225-galletas-caramelizadas-prestige.jpg" alt="Imagen 1" height="300">
             <div class="card-info">
-                <h2>Título 1</h2>
-                <h3>Subtítulo 1</h3>
-                <p>Precio: $10</p>
-                <p>Código: ABC123</p>
+                <h2>Cafés E.P. Crema & Aroma</h2>
+                <h6>300 Cafés E.P. Crema & Aroma G.E.+ 225 Galletas caramelizadas Prestige</h6>
+                <p ><span class="black-bold">Precio:</span> $100</p>
+                <p ><span class="black-bold">Código: </span>ABC121</p>
             </div>
         </div>
         <div class="card">
-            <img src="./imagen/photo-1494314671902-399b18174975.jpg" alt="Imagen 1" height="300">
+            <img src="./imagen/cafe-lavazza-espresso-point-forte-e-deciso.jpg" alt="Imagen 1" height="300">
             <div class="card-info">
-                <h2>Título 1</h2>
-                <h3>Subtítulo 1</h3>
-                <p>Precio: $10</p>
-                <p>Código: ABC123</p>
+                <h2>Café Espresso</h2>
+                <h6>Café Lavazza Espresso Point Forte e Deciso (100 u.)</h6>
+                <p ><span class="black-bold">Precio:</span> $1055</p>
+                <p ><span class="black-bold">Código: </span>ADD123</p>
             </div>
         </div>
         <div class="card">
-            <img src="./imagen/photo-1561882468-9110e03e0f78.jpg" alt="Imagen 1" height="300">
+            <img src="./imagen/tarrinas-de-leche-oldenburger-10-u.jpg" alt="Imagen 1" height="300">
             <div class="card-info">
-                <h2>Título 1</h2>
-                <h3>Subtítulo 1</h3>
-                <p>Precio: $10</p>
-                <p>Código: ABC123</p>
+                <h2>leche Oldenburger</h2>
+                <h6>Tarrinas de leche Oldenburger (10 u.)</h6>
+                    <li class="product-flag out_of_stock">Fuera de stock</li>
+                 <!-- <p ><span class="black-bold">Precio:</span> </p> -->
+                <p ><span class="black-bold">Código: </span>ABC123</p>
             </div>
         </div>
         <div class="card">
-            <img src="./imagen/photo-1494314671902-399b18174975.jpg" alt="Imagen 1" height="300">
+            <img src="./imagen/lates.jpg" alt="Imagen 1" height="300">
             <div class="card-info">
-                <h2>Título 1</h2>
-                <h3>Subtítulo 1</h3>
-                <p>Precio: $10</p>
-                <p>Código: ABC123</p>
+                <h2>Lattes</h2>
+                <h6>Hay cuatro deliciosos sabores con topping de crema</h6>
+                <p ><span class="black-bold">Precio:</span> $1006</p>
+                <p ><span class="black-bold">Código: </span>ABC999</p>
             </div>
         </div>
         <div class="card">
-            <img src="./imagen/photo-1561882468-9110e03e0f78.jpg" alt="Imagen 1" height="300">
+            <img src="./imagen/frappe.jpg" alt="Imagen 1" height="300">
             <div class="card-info">
-                <h2>Título 1</h2>
-                <h3>Subtítulo 1</h3>
-                <p>Precio: $10</p>
-                <p>Código: ABC123</p>
+                <h2>Frappés</h2>
+                <h6>Hay tres exclusivos sabores lácteos muy tentadores coronados con un topping de crema y productos Havanna.</h6>
+                <p ><span class="black-bold">Precio:</span> $2005</p>
+                <p ><span class="black-bold">Código: </span>ABF233</p>
             </div>
         </div>
-        <div class="card">
-            <img src="./imagen/photo-1494314671902-399b18174975.jpg" alt="Imagen 1" height="300">
-            <div class="card-info">
-                <h2>Título 1</h2>
-                <h3>Subtítulo 1</h3>
-                <p>Precio: $10</p>
-                <p>Código: ABC123</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./imagen/photo-1561882468-9110e03e0f78.jpg" alt="Imagen 1" height="300">
-            <div class="card-info">
-                <h2>Título 1</h2>
-                <h3>Subtítulo 1</h3>
-                <p>Precio: $10</p>
-                <p>Código: ABC123</p>
-            </div>
-        </div>
+          </div>
         <!-- Repite este bloque de tarjeta según sea necesario -->
 
     </div>
-    <footer>
+</section>
+
+<section id="modal">
+    <div class="container mb-3">
+        <div class="row">
+          <div class="col-sm-12" id="productos-modal">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Consultanos</button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header"><br>
+                    <span>
+                      <img src="#" width="120px" height="120px" alt="logo"></span><br>
+                    <h5 class="modal-title" id="exampleModalLabel">Espero tu llamado <span><img src="./imagen/iconowhatsapp.jpg" alt="" width="40px" height="40px"></span> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="text-center">Comunicate y realiza tu pedido</p>
+                    <p class="text-center">Esperamos tu consulta al : + 54 9 11 1111 1111</p>
+                    <p class="text-center"> Email: info@cafeteria-frappe.netlify.app</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Fin de modal-->
+</section>
+
+
+
+
+    <!--CÓDIGO CON EL LINK DE WHATSAPP API-->
+    <a href="https://api.whatsapp.com/send?phone=549 99999 9999&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n" class="floatWapp" target="_blank">
+      <i class="fa fa-whatsapp my-floatWapp"></i>
+      </a>
+      <!--CÓDIGO CON EL LINK DE WHATSAPP API-->
+
+
+
+
+
+
+<footer>
+
+<div class="fhoter">
+<div class="box">
+
+    <div class="contiene">
+        <div class="column">
+              <h2>INFO GENERAL</h2>
+              <ul>
+                <li><a href="#" >Sobre nosotros</a></li>
+                <li><a href="#" >Programa fidelización clientes VIP</a></li>
+                <li><a href="#">Contacte con nosotros</a></li>
+                <li><a href="#">Mapa del sitio</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>MI CUENTA</h2>
+              <ul>
+                <li><a href="#">Iniciar sesión</a></li>
+                <li><a href="#">Registrarse</a></li>
+                <li><a href="#">Mi perfil</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>INFO GENERAL</h2>
+              <ul>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Programa fidelización clientes VIP</a></li>
+                <li><a href="#">Contacte con nosotros</a></li>
+                <li><a href="#">Mapa del sitio</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>LEGAL</h2>
+              <ul>
+                <li><a href="#">Aviso legal</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Política de cookies</a></li>
+                <li><a href="#">Condiciones de uso</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>MI CUENTA</h2>
+              <ul>
+                <li><a href="#">Iniciar sesión</a></li>
+                <li><a href="#">Registrarse</a></li>
+                <li><a href="#">Mi perfil</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+              </ul>
+            </div>
+          </div>
+<hr>
+</div>
+<div class="box">
         <nav>
             <ul>
                 <li><a href="#" class="active"><i class="fab fa-facebook"></i></a></li>
@@ -104,7 +231,20 @@
                 <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
             </ul>
         </nav>
+        
+    </div> 
+    <center>
+
+      <div id="legal" class="col-lg-4 col-sm-12 ">
+        <p>	&copy; 2024 Todos los derechos reservados</p>
+      </div>   
+    </center>
+    </div>
     </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
