@@ -23,6 +23,7 @@ body {
   padding: 0;
 }
 
+
 header {
   /* background-color: #333; */
   background-image: url(../imagen/fondo.jpg);
@@ -36,23 +37,19 @@ header {
   z-index: 1000; /* Para asegurar que esté por encima del contenido */
 }
 
-.carrusel,
-.contacto-top,
-.contenedorLogin,
-.preguntas-titulo {
+.carrusel,.contacto-top,.contenedorLogin,.preguntas-titulo{
   padding-top: 120px;
 }
+
 
 @media screen and (max-width: 768px) {
   nav {
     display: flex;
     flex-direction: column;
+    
   }
 
-  .carrusel,
-  .contacto-top,
-  .contenedorLogin,
-  .preguntas-titulo {
+  .carrusel,.contacto-top,.contenedorLogin,.preguntas-titulo{
     padding-top: 120px;
   }
 }
@@ -88,6 +85,8 @@ nav ul li a.active,
 nav ul li a:hover {
   color: #ff6600;
 }
+
+
 
 .container {
   display: flex;
@@ -266,7 +265,6 @@ footer nav ul li a:hover {
 }
 
 .fhoter {
-  overflow: hidden;
   display: flex;
   flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
 }
@@ -307,10 +305,7 @@ footer nav ul li a:hover {
   .column {
     width: 100%;
   }
-  .carrusel,
-  .contacto-top,
-  .contenedorLogin,
-  .preguntas-titulo {
+  .carrusel,.contacto-top,.contenedorLogin,.preguntas-titulo{
     padding-top: 150px;
   }
 }
@@ -333,4 +328,18 @@ footer nav ul li a:hover {
 
 .my-floatWapp {
   margin-top: 16px;
+}
+.consultar{
+  text-decoration: none;
+  color: #365486;
+  list-style: none;
+  font-weight: 400;
+
+}
+
+.consultar:hover{
+  background-color: #365486;
+  color: #0f1035 ;
+  cursor: pointer;
+  border-radius: 5px;
 }
