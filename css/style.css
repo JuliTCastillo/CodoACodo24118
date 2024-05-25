@@ -130,6 +130,12 @@ nav ul li a:hover {
   text-align: center;
 }
 
+.error {
+  color: red;
+  margin-top: 5px;
+  display: none;
+}
+
 footer {
   /* background-color: #333; */
   background-image: url(../imagen/fondo.jpg);
