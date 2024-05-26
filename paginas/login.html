@@ -60,7 +60,7 @@
             class="col-md-auto text-white"
             style="width: 20rem; height: auto"
           >
-            <form class="pt-4" id="registerForm" action="/submit" method="get">
+            <form class="pt-4" id="registerForm" method="get">
               <div class="mb-3">
                 <label class="form-label fs-3" for="email">Email</label>
                 <input
@@ -83,13 +83,13 @@
                     id="password"
                     placeholder="Contraseña"
                    
-                    onkeyup="calcFortaleza()"
                   />
                
                   <button
                   class="btn btn-outline-secondary" 
                   type="button" 
                   id="togglePassword">
+
                   <i class="fa fa-eye" 
                   aria-hidden="true"></i>
             
@@ -140,6 +140,7 @@
               >
                 Iniciar Sesión
               </button>
+            </form>
 
               <div class="text-center">
                 <p class="text-light">
@@ -147,7 +148,6 @@
                   <a href="./registro.html" class="text-light">CREAR CUENTA</a>
                 </p>
               </div>
-            </form>
           </div>
 
           <!-- Modal de Recuperación de Contraseña -->
@@ -348,8 +348,9 @@
         </center>
       </div>
     </footer>
-    <script src="../js/validar.js"></script>
-    <script src="../js/fortaleza.js"></script>
+    <!-- <script src="../js/validar.js"></script> -->
+    <script src="../js/login.js"></script>
+    <!-- <script src="../js/fortaleza.js"></script> -->
     <script src="../js/scripts.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

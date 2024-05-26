@@ -1,26 +1,54 @@
-    const JSON_LOCAL ="../user.json";
+function confirmacionPassword() {
+    let contrasenia = document.getElementById("confirmPassword").value
+    let password = document.getElementById("password").value
+    let fort=""
+    
+    if(contrasenia === password){
+        formValid = true
+    }
+    else{
+        fort = "Las contraseñas no coinciden!"
+        formValid = false
+    }
+    document.getElementById("msg").innerHTML=fort
+}  
 
-    fetch(JSON_LOCAL)
-        .then(res => res.json())
-        .then(users => {
-            const form = document.querySelector("#formRegistro");
+// Mostrar Contraseña Inicio sesion
+document
+  .getElementById('toggleConfirmPassword')
+  .addEventListener('click', function () {
+    var passwordField = document.getElementById('confirmPassword');
+    var passwordFieldType = passwordField.getAttribute('type');
+    
+    if (passwordFieldType === 'password') {
+      passwordField.setAttribute('type', 'text');
+      this.textContent = 'Ocultar';
+    } else {
+      passwordField.setAttribute('type', 'password');
+      this.textContent = 'Mostrar';
+    }
+});
 
-            form.addEventListener("submit", (event) => {
-                event.preventDefault();
-                // Agarramos datos del formulario
-                const formData = new FormData(form);
 
-                // Convertir los datos del formulario a un objeto JSON
-                const jsonData = {};
-                formData.forEach((value, key) => {
-                    jsonData[key] = value;
-                });
+const form = document.querySelector("#formRegistro");
+let formValid = false
 
-                // Agregar los datos del formulario al JSON
-                users.push(jsonData);
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-                console.log(users);
-                // Mostrar los usuarios actualizados (solo para propósitos de demostración)
-            });
-        })
-        .catch(error => console.error('Error al cargar el JSON:', error))
+    // Obtener todos los elementos del formulario
+    const formData = new FormData(form);
+
+    if(formValid){
+        // Convertir los datos del formulario en un objeto JavaScript
+        const formValues = {};
+        for (const [key, value] of formData.entries()) {
+            console.log(key);
+            if(key != "confirmPassword")formValues[key] = value;
+        }
+
+        // Hacer algo con el objeto de valores, como enviar una solicitud HTTP o realizar validaciones
+        console.log("Valores del formulario:", formValues);
+    }
+});
+ 

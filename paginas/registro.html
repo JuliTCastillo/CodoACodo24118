@@ -49,63 +49,57 @@
                 <div class="row">
                     <div class="col">
                         <label class="form-label fs-4 text-light" for="name">Nombre</label>
-                        <input
-                            class="form-control"
-                            type="text"
-                            name="name"
-                            id="name"
-                            placeholder="Ingrese su nombre"
-                            required
-                        />
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Ingrese su nombre"
+                            required />
                     </div>
                     <div class="col">
                         <label class="form-label fs-4 text-light" for="lastName">Apellido</label>
-                        <input
-                            class="form-control"
-                            type="text"
-                            name="lastName"
-                            id="lastName"
-                            placeholder="Ingrese su Apellido"
-                            required
-                        />
+                        <input class="form-control" type="text" name="lastName" id="lastName"
+                            placeholder="Ingrese su Apellido" required />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label class="form-label fs-4 text-light" for="password">Email</label>
-                        <input
-                            class="form-control"
-                            type="email"
-                            name="email"
-                            id="email"
-                            placeholder="Ingresa su email"
-                            required
-                        />
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Ingresa su email"
+                            required />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <label class="form-label fs-4 text-light" for="password">Contraseña</label>
-                        <input
-                            class="form-control"
-                            type="password"
-                            name="password"
-                            id="password"
-                            placeholder="Contraseña"
-                            required
-                        />
+                        <label class="form-label fs-4 text-light">Contraseña</label>
+                        <div class="input-group">
+                            <input class="form-control" type="password" name="password" id="password"
+                                placeholder="Contraseña" onkeyup="calcFortaleza()" required/>
+
+                            <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </button>
+
+                        </div>
+                        <div class="fort text-light">
+                            <span id="fort"></span>
+                        </div>
+                        <span id="passwordError" class="error text-light">La contraseña es muy débil.</span>
                     </div>
+
                     <div class="col">
-                        <label class="form-label fs-4 text-light" for="confirmPassword">Confirmar contraseña</label>
-                        <input
-                            class="form-control"
-                            type="password"
-                            name="confirmPassword"
-                            id="confirmPassword"
-                            placeholder="Confirmar Contraseña"
-                            required
-                        />
+                        <label class="form-label fs-4 text-light">Contraseña</label>
+                        <div class="input-group">
+                            <input class="form-control" type="password" name="confirmPassword" id="confirmPassword"
+                                placeholder="Confirmación de contraseña" onkeyup="confirmacionPassword()" required/>
+
+                            <button class="btn btn-outline-secondary" type="button" id="toggleConfirmPassword">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </button>
+
+                        </div>
+                        <div class="fort text-light">
+                            <span id="msg"></span>
+                        </div>
+                        <span id="passwordError" class="error text-light">La contraseña es muy débil.</span>
                     </div>
+
                 </div>
                 <div class="row">
                     <input class="btn btn-success mt-3" type="submit" value="Registrar">
@@ -193,7 +187,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
-        
+
     <script src="../js/formRegistro.js"></script>
+    <script src="../js/scripts.js"></script>    
+    <script src="../js/fortaleza.js"></script>
 </body>
+
 </html>

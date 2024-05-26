@@ -13,10 +13,4 @@ function calcFortaleza() {
     }
 
     document.getElementById("fort").innerHTML=fort
-
-
-
-
-
-
 }   

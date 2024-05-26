@@ -24,19 +24,3 @@ document
       this.textContent = 'Mostrar';
     }
   });
-
-//Modal para recuperar contraseña, envia un mensaje al correo
-document
-  .getElementById('forgotPasswordForm')
-  .addEventListener('submit', function (event) {
-    event.preventDefault();
-    var email = document.getElementById('forgotEmail').value;
-    var messageElement = document.getElementById('forgotPasswordMessage');
-
-    // Simulación de respuesta del servidor:
-    setTimeout(function () {
-      messageElement.textContent =
-        'Si existe una cuenta asociada a este email, recibirás un enlace para restablecer tu contraseña.';
-      messageElement.classList.add('text-success');
-    }, 1000);
-  });
