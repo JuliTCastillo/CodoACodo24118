@@ -60,7 +60,7 @@
             class="col-md-auto text-white"
             style="width: 20rem; height: auto"
           >
-            <form class="pt-4" action="/submit" method="get">
+            <form class="pt-4" id="registerForm" action="/submit" method="get">
               <div class="mb-3">
                 <label class="form-label fs-3" for="email">Email</label>
                 <input
@@ -69,11 +69,12 @@
                   name="email"
                   id="email"
                   placeholder="Email"
-                  required
+                  
                 />
+                <span id="emailError" class="error">Por favor ingrese un correo válido.</span>
               </div>
               <div class="mb-3">
-                <label class="form-label fs-3" for="password">Contraseña</label>
+                <label class="form-label fs-3">Contraseña</label>
                 <div class="input-group">
                   <input
                     class="form-control"
@@ -81,16 +82,39 @@
                     name="password"
                     id="password"
                     placeholder="Contraseña"
-                    required
+                   
+                    onkeyup="calcFortaleza()"
                   />
+               
                   <button
-                    class="btn btn-outline-secondary"
-                    type="button"
-                    id="togglePassword"
-                  >
-                    Mostrar
+                  class="btn btn-outline-secondary" 
+                  type="button" 
+                  id="togglePassword">
+                  <i class="fa fa-eye" 
+                  aria-hidden="true"></i>
+            
                   </button>
+
+                  </div>
+                  <div class="fort">
+                    <span id="fort"></span>
+                   </div>
+                   <span id="passwordError" class="error">La contraseña es muy débil.</span>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <div class="form-group form-check">
                   <input
                     type="checkbox"
@@ -324,7 +348,8 @@
         </center>
       </div>
     </footer>
-
+    <script src="../js/validar.js"></script>
+    <script src="../js/fortaleza.js"></script>
     <script src="../js/scripts.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -345,5 +370,6 @@
     <script>
       AOS.init();
     </script>
+   
   </body>
 </html>
