@@ -23,7 +23,6 @@ body {
   padding: 0;
 }
 
-
 header {
   /* background-color: #333; */
   background-image: url(../imagen/fondo.jpg);
@@ -37,19 +36,23 @@ header {
   z-index: 1000; /* Para asegurar que esté por encima del contenido */
 }
 
-.carrusel,.contacto-top,.contenedorLogin,.preguntas-titulo{
+.carrusel,
+.contacto-top,
+.contenedorLogin,
+.preguntas-titulo {
   padding-top: 120px;
 }
-
 
 @media screen and (max-width: 768px) {
   nav {
     display: flex;
     flex-direction: column;
-    
   }
 
-  .carrusel,.contacto-top,.contenedorLogin,.preguntas-titulo{
+  .carrusel,
+  .contacto-top,
+  .contenedorLogin,
+  .preguntas-titulo {
     padding-top: 120px;
   }
 }
@@ -86,13 +89,18 @@ nav ul li a:hover {
   color: #ff6600;
 }
 
-
-
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
+}
+
+.contacto-estamos-envianos {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .card {
@@ -287,33 +295,88 @@ footer nav ul li a:hover {
 }
 
 /**********SECCION PREGUNTAS*************/
-.preguntas-titulo {
-  padding: 1rem;
-}
-.accordion-item {
-  margin: 0.5rem;
-}
-.sin-bullets li {
-  list-style: none;
-}
-.sin-bullets li img {
-  margin: 0.5rem;
-}
-.accordion-button:not(.collapsed) {
-  color: var(--secondary);
+
+.pregunta--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #212529;
+  width: 50%;
+  padding-top: 4rem;
+  height: auto;
+  margin: 0 auto;
 }
 
-@media (max-width: 576px) {
-  .contiene {
-    display: block;
-    justify-content: center;
-  }
-  .column {
-    width: 100%;
-  }
-  .carrusel,.contacto-top,.contenedorLogin,.preguntas-titulo{
-    padding-top: 150px;
-  }
+h3 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #f8f9fa;
+}
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* Accordion Styles */
+.accordion-button {
+  background-color: #343a40;
+  color: #f8f9fa;
+  border: none;
+  padding: 15px;
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #495057; /* Slightly lighter dark grey for hover */
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e05a00;
+}
+
+.accordion-item {
+  border: 1px solid #dee2e6;
+  margin-bottom: 10px;
+}
+
+.accordion-body {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.sin-bullets li {
+  display: flex;
+  align-items: center;
+}
+
+.sin-bullets li span {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/* SVG Icon Styles */
+.bi {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.preguntas-titulo {
+  margin-bottom: 20px;
 }
 
 /****************BOTON WHATSAPP*************************/
@@ -335,17 +398,16 @@ footer nav ul li a:hover {
 .my-floatWapp {
   margin-top: 16px;
 }
-.consultar{
+.consultar {
   text-decoration: none;
   color: #365486;
   list-style: none;
   font-weight: 400;
-
 }
 
-.consultar:hover{
+.consultar:hover {
   background-color: #365486;
-  color: #0f1035 ;
+  color: #0f1035;
   cursor: pointer;
   border-radius: 5px;
 }
