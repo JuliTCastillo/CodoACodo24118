@@ -17,7 +17,7 @@ public class App
         nuevoProducto.setTitle("Frapuccino Light");
         nuevoProducto.setDescripcion("Importado de Paris, 30% menos calorias");
         nuevoProducto.setPrecio(129.99);
-        nuevoProducto.setImage("https://picimage/jdneu16363;$+$+26.jpg");
+        nuevoProducto.setImage("https://picsum.photos/id/2/5000/3333");
         
             // CRUD
              // Agregar un producto
